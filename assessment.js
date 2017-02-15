@@ -4,8 +4,8 @@ var hello = "goodbye";
 
 
 // #2 Use the variable iLove to create a new variable called iLoveCode that is assigned the string "I love code"
-var iloveCode = "I love code";
-var iLove = iloveCode;
+var iLove = "I love code";
+var iLoveCode = iLove;
 
 
 // #3  Make an object called bob and give it the following properties
@@ -17,7 +17,7 @@ var iLove = iloveCode;
 var bob = {
     height: "6ft",
     age: 24,
-    hair: {style: "spikey", color: "brown"}
+    hair: {style: "spikey", color: "brown"},
     presidentOfTheUnitedStates: false,
     likes: ["apples", "bananas", "cherries"]
 }
@@ -135,15 +135,15 @@ function makeChatMessage(message, author){
     temperature over 80 or humidity over 50 or cloudiness over 50 - return "Hmm, probably not"
     Otherwise - return "I love outside"
 */
-function coderTest(temperature,humidity,cloudiness){
+function outside(temperature,humidity,cloudiness){
     if(temperature > 80 && humidity > 40){
         return "I'm all sweat";
     }else if(temperature < 40 && cloudiness > 60){
         return "I have icecicles";
-    }else if(temperature > 80 && humidity > 40){
-        return "I'm leterally in the desert";
+    }else if(temperature > 80 && cloudiness < 20){
+        return "I'm literally in the desert";
     }else if(temperature > 80 || humidity > 50 || cloudiness > 50){
-        return "Hmm, probaldly not";
+        return "Hmm, probably not";
     }else{
         return "I love outside";
     }
